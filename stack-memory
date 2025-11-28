@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+struct student
+{
+    char name[40];
+    int age;
+    unsigned long mobil;
+};
+int main(){
+    struct student st2;
+    printf("Enter Student Name: ");
+    fgets(st2.name, 40, stdin);
+    printf("Enter Student Age: ");
+    scanf("%d",  &st2.age);
+    printf("Enter Student Mobile:");
+    scanf("%lu", &st2.mobil);
+    printf("The Student name %s\n", st2.name);
+    printf("The Student Age %d\n", st2.age);
+    printf("The Student Mobile %lu\n", st2.mobil);
+    return 0;
+}
